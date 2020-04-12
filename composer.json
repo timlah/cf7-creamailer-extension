@@ -1,0 +1,22 @@
+{
+  "name": "souroatmilk/cf7cmstandalone",
+  "description": "Contact Form 7 Creamailer extension",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "SourOatMilk",
+      "email": "souroatmilk@protonmail.com"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "SourOatMilk\\CF7CMStandalone\\": [
+        "src/"
+      ]
+    }
+  }
+}

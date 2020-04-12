@@ -1,0 +1,49 @@
+@import "../../../node_modules/bulma/sass/utilities/all.sass";
+@import "../../../node_modules/bulma/sass/base/helpers.sass";
+@import "../../../node_modules/bulma/sass/elements/form.sass";
+@import "../../../node_modules/bulma/sass/elements/tag.sass";
+@import "../../../node_modules/bulma/sass/components/level.sass";
+
+.extension-header {
+  img,
+  svg {
+    height: 30px !important;
+    width: auto;
+  }
+}
+
+.level {
+  flex-wrap: wrap;
+
+  .field {
+    padding: 10px;
+    width: 100%;
+
+    select,
+    .select {
+      width: 100%;
+    }
+  }
+}
+
+.field {
+  &.is-required {
+    .label::after {
+      content: "*";
+      color: #f00;
+      display: inline-block;
+    }
+    &.is-danger {
+      .input,
+      .select select {
+        border-color: #f00;
+      }
+    }
+  }
+}
+
+fieldset {
+  .level {
+    margin-bottom: 0 !important;
+  }
+}
