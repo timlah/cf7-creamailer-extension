@@ -25,8 +25,6 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-require_once(__DIR__ . '/vendor/autoload.php');
-
 define('CF7CMSTANDALONE_CF7EB_URL', \plugin_dir_url(__FILE__));
 define('CF7CMSTANDALONE_CF7EB_VERSION', '0.1.2');
 define('CF7CMSTANDALONE_CF7EB_DEV', getenv('DEV'));
